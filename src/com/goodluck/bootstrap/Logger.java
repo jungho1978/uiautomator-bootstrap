@@ -2,7 +2,7 @@ package com.goodluck.bootstrap;
 
 public class Logger {
     private static String prefix = "[BOOTSTRAP]";
-    private static String suffix = "[/BOOTSTRAP]";
+    private static String suffix = " [/BOOTSTRAP]";
 
     public static void debug(final String msg) {
         System.out.println(Logger.prefix + " [debug] " + msg + Logger.suffix);
