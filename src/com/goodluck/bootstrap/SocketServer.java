@@ -89,7 +89,7 @@ public class SocketServer {
         try {
             client = server.accept();
             Logger.debug("Client connected");
-            in = new BufferedReader(new InputStreamReader(client.getInputStream(), "UTF_8"));
+            in = new BufferedReader(new InputStreamReader(client.getInputStream(), "UTF-8"));
             out = new BufferedWriter(new OutputStreamWriter(client.getOutputStream(), "UTF-8"));
             while (keepListening) {
                 handleClientData();

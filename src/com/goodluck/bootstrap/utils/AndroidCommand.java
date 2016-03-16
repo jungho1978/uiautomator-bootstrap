@@ -13,7 +13,7 @@ public class AndroidCommand {
         json = new JSONObject(jsonStr);
         setType(json.getString("cmd"));
     }
-
+    
     public AndroidCommandType commandType() {
         return cmdType;
     }
